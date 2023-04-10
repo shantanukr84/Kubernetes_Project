@@ -8,10 +8,10 @@ MAINTAINER Jan Wagner "waja@cyconet.org"
 RUN apt-get update && apt-get install --no-install-recommends -y nginx; \
 echo "daemon off;" >> /etc/nginx/nginx.conf
 
-Expose HTTP
+#Expose HTTP
 EXPOSE 80
 
-Start nginx
+#Start nginx
 CMD ["/usr/sbin/nginx"]
 
 
