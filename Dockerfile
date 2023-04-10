@@ -6,13 +6,13 @@ MAINTAINER Jan Wagner "waja@cyconet.org"
 
 # Install nginx and adjust nginx config to stay in foreground
 RUN apt-get update && apt-get install --no-install-recommends -y nginx; \
-echo "daemon off;" >> /etc/nginx/nginx.conf
+ echo "daemon off;" >> /etc/nginx/nginx.conf
 
-#Expose HTTP
+# Expose HTTP
 EXPOSE 80
 
-#Start nginx
-CMD ["/usr/sbin/nginx"]
+# Start nginx
+CMD ["/usr/sbin/nginx"
 
 
 
